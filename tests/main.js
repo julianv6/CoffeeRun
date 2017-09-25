@@ -1,5 +1,5 @@
-eval(require('fs').readFileSync('tests/test_datastore.js', 'utf8'));
-eval(require('fs').readFileSync('tests/test_truck.js', 'utf8'));
+eval(require('fs').readFileSync('tests/datastore.js', 'utf8'));
+eval(require('fs').readFileSync('tests/truck.js', 'utf8'));
 
 (function(window) {
   'use strict';
@@ -10,4 +10,4 @@ eval(require('fs').readFileSync('tests/test_truck.js', 'utf8'));
   window.myTruck = myTruck;
   eval(require('fs').readFileSync('tests/test_datastore.js', 'utf8'));
   eval(require('fs').readFileSync('tests/test_truck.js', 'utf8'));
-})(window);
+})(process);
